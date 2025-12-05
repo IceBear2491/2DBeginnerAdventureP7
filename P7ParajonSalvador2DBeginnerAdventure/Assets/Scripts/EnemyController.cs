@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
+    bool broken = true;
 
     Animator animator;
 
@@ -36,6 +37,10 @@ public class EnemyController : MonoBehaviour
     // FixedUpdate has the same call rate as the physics system
     void FixedUpdate()
     {
+        if (!broken)
+        {
+            return;
+        }
         Vector2 position = rigidbody2d.position;
 
         if (vertical)
@@ -63,4 +68,10 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    public void Fix()
+    {
+        broken = true;
+        rigidbody2d.simulated = false;
+        animator.SetTrigger("Fixed");
+    }
 }

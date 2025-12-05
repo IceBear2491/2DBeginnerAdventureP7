@@ -193,6 +193,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd788677834499428c4a789009cb397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talkAction:
+    m_Name: Talk
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5e9130a8-3195-47ca-8767-816f8b41dd89
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   MoveAction:
     m_Name: Move
     m_Type: 0
@@ -346,7 +355,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.7243457}
+  m_Offset: {x: 0, y: 0.03805679}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -357,7 +366,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.77, y: 0.76130867}
+  m_Size: {x: 0.77, y: 2.2861137}
   m_EdgeRadius: 0
 --- !u!95 &-2493980868850503275
 Animator:
